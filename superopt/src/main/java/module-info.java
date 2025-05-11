@@ -24,7 +24,7 @@ module sqlsolver.superopt {
   requires com.zaxxer.hikari;
   requires progressbar;
   requires trove4j;
-  requires z3;
+  requires com.microsoft.z3;
   requires com.microsoft.sqlserver.jdbc;
   requires calcite.core;
   requires mysql.connector.java;
