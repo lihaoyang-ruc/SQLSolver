@@ -20,10 +20,13 @@ subprojects {
     targetCompatibility = JavaVersion.VERSION_17
 
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
         flatDir { dirs("$rootDir/lib") }
         mavenCentral()
     }
-
+    
     tasks.withType(JavaCompile) {
         doFirst {
             options.compilerArgs += [
